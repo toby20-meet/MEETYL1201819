@@ -1,0 +1,16 @@
+import turtle
+def make_circle(color,x,y):
+	turtle.penup()
+	turtle.goto(x,y)
+	turtle.pendown()
+	turtle.color(color)
+	turtle.begin_fill()
+	turtle.circle(75)
+	turtle.circle(100)
+	turtle.end_fill()
+make_circle('blue',0,0)
+make_circle('yellow',125,-75)
+make_circle('black',250,0)
+make_circle('green',375,-75)
+make_circle('red',500,0)
+turtle.mainloop()
