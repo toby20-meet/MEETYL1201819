@@ -7,7 +7,8 @@ def random_list():
 	for i in range(x):
 		a.append(random.randint(1,99))
 	y = random.randint(1,15)
-	for i in range(y)
+	for i in range(y):
+		b.append(random.randint(1,99))
 
 def common():
 	for i in a:
@@ -16,8 +17,8 @@ def common():
 				commonlist.append(i)
 
 	return(commonlist)
-common()
 random_list()
-print(commonlist)
-
+common()
 print(a)
+print(b)
+print(commonlist)
