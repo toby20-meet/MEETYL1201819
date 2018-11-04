@@ -1,4 +1,5 @@
 import random
+'''
 a = []
 b = []
 commonlist = []
@@ -22,3 +23,21 @@ common()
 print(a)
 print(b)
 print(commonlist)
+'''
+'''
+import tkinter as tk
+from tkinter import simpledialog
+
+prime_numbers = 0
+def is_prime(x):
+	if x >=2:
+		for y in range(2,x):
+			if not(x%y):
+				return False
+	else:
+		return False
+	return True
+
+for i in range(int(simpledialog.askstring("Input", "Number", parent=tk.Tk()))):
+	if is_prime(i):
+		print(i)
