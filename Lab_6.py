@@ -15,16 +15,23 @@ class Square(Turtle):
 p = Square(50)
 p.random_color()
 
-turtle.mainloop()
+
 '''
+turtle.hideturtle()
 class Hexagon(Turtle):
 	def __init__(self,size):
 		Turtle.__init__(self)
 		self.shapesize(size)
-	def shape():
+	def Shape(self):
 		turtle.begin_poly()
+		turtle.penup()
 		for x in range(6):
 			turtle.forward(10)
 			turtle.left(60)
 		turtle.end_poly()
 		p = turtle.get_poly()
+		turtle.register_shape("hexagon",p)
+		self.shape("hexagon")
+j = Hexagon(5)
+j.Shape()
+turtle.mainloop()
