@@ -162,17 +162,18 @@ cake.eat()
 # what I want to be printed: Yummy!!! Eating a chocolate cake :)
 '''
 class Cat():
-	def __init__(self, name):
+	def __init__(self, name, age):
 		self.name = name
-		self.age = 0 
-	def birthday(self, age):
-	    self.age += 1
-	    if self.age >= 100
-	        print("Dong dong, the cat is dead!")
-	    else:
-	        print(self.name+  ' having its '+ self.age+ ' birthday!')
+		self.age = age
+	def birthday(self):
+		for i in range(9):
+		    self.age += 1
+		    if self.age == 9:
+		        print("Dong dong, the cat is dead!")
+		    else:
+		        print(self.name+  ' having its '+ str(self.age)+ ' birthday!')
 
-my_cat = Cat("Salem")
-my_cat.birthday(8)
+my_cat = Cat("Salem",0)
+my_cat.birthday()
 # what I want: my cat to celebrate its 8th birthday (and all the 
 # birthdays that come before that)
