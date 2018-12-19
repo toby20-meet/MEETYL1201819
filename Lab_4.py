@@ -39,6 +39,12 @@ j.work()
 class Song(object):
 	def __init__(self, lyrics):
 		self.lyrics = lyrics
-	def sing_me_a_song(self):
+	def sing_me_a_song(self,lyrics):
+		dude = self.lyrics.split('?')
+		for i in dude:
+			print(i)
+
+
 
 Psycho = Song("Johny Johny Yes Papa Johny, Johny Yes, Papa? Eating sugar? No, papa! Telling lies? No, papa! Open your mouth Ah, ah, ah!  Johny, Johny Yes, Papa? Eating sugar? No, papa! Telling lies? No, papa! Open your mouth Ah, ah, ah! Johny, Johny Yes, Papa? Eating sugar? No, papa! Telling lies? No, papa! Open your mouth Ah, ah, ah!")
+Psycho.sing_me_a_song("Johny Johny Yes Papa Johny, Johny Yes, Papa? Eating sugar? No, papa! Telling lies? No, papa! Open your mouth Ah, ah, ah!  Johny, Johny Yes, Papa? Eating sugar? No, papa! Telling lies? No, papa! Open your mouth Ah, ah, ah! Johny, Johny Yes, Papa? Eating sugar? No, papa! Telling lies? No, papa! Open your mouth Ah, ah, ah!")
