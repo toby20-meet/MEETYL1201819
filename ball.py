@@ -36,4 +36,22 @@ class Ball(Turtle):
 			self.dx = -self.dx
 		if down_side_ball <= -screen_height:
 			self.dy = -self.dy 
-# turtle.mainloop()
+
+class Polygon(Turtle):
+	def __init__(self,lines,color,size,x,y):
+		Turtle.__init__(self)
+		self.lines = lines
+		self.r = size
+		self.shapesize(size/10)
+		self.pu()
+		self.color(color)
+		turtle.begin_poly()
+		turtle.penup()
+		for i in range(self.lines):
+			turtle.forward(20)
+			turtle.right(360/self.lines)
+		turtle.end_poly()
+		p = turtle.get_poly()
+		turtle.register_shape("Polygon",p)
+		self.shape("Polygon")
+		self.setposition(x,y)
